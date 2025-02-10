@@ -1,0 +1,30 @@
+services:
+  postgres:
+    container_name: postgres_sql_booknet
+    image: postgres
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      PGDATA: /var/lib/postgresql/data
+      POSTGRES_DB: booknet
+    volumes:
+      - postgres:/data/postgres
+    ports:
+      - 5432:5432
+    networks:
+      - booknet
+    restart: unless-stopped
+  mail-dev:
+    container_name: mail-dev-booknet
+    image: maildev/maildev
+    ports:
+      - 1080:1080
+      - 1025:1025
+
+networks:
+  booknet:
+    driver: bridge
+
+volumes:
+  postgres:
+    driver: local
