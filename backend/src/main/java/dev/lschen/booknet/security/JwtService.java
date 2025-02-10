@@ -1,6 +1,5 @@
 package dev.lschen.booknet.security;
 
-import dev.lschen.booknet.user.User;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;

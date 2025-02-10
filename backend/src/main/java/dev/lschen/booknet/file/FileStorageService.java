@@ -1,6 +1,5 @@
 package dev.lschen.booknet.file;
 
-import dev.lschen.booknet.book.Book;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

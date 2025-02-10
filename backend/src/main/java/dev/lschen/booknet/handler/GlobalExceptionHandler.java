@@ -2,7 +2,6 @@ package dev.lschen.booknet.handler;
 
 import dev.lschen.booknet.exception.OperationNotPermittedException;
 import jakarta.mail.MessagingException;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.DisabledException;
