@@ -43,7 +43,6 @@ public class JwtService {
     }
 
     public String generateToken(Map<String, Object> claims, UserDetails userDetails) {
-
         return buildToken(claims, userDetails, jwtExpiration);
     }
 
