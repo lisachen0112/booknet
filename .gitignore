@@ -1,4 +1,4 @@
-backend/HELP.md
+HELP.md
 .gradle
 build/
 !backend/gradle/wrapper/gradle-wrapper.jar
