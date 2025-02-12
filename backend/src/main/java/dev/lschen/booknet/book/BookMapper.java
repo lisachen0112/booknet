@@ -11,6 +11,7 @@ public class BookMapper {
     public Book toBook(BookRequest request) {
         return Book.builder()
                 .id(request.id())
+                .isbn(request.isbn())
                 .authorName(request.authorName())
                 .title(request.title())
                 .synopsis(request.synopsis())
